@@ -1,6 +1,6 @@
 # Reels_Bot
 
-Bot for daily scraping and subsequent update of reel-based data of various users from Instagram
+Bot for harvesting and updating reel-based data of various Instagram users on a regular basis.
 
 ## ABOUT
 
