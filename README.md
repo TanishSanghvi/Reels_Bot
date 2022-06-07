@@ -22,13 +22,16 @@ The goal of the project was to find relevant/trending topics from a large data s
 Step 1: To pull reel_ID's from IG handles 
 - Our bots scrape the reels and push them to a temporary db table
 - Runtime: Around 40 minutes, Manual Effort: N/A
-- Code: reels_bot_part1.py
+- Code: **reels_bot_part1.py**
 
 Step 2: To update metrics for reels published in the last 90 days
 - All the manual effort and account blocking takes place in this step
 - Accounts are shuffled and given different sleep rates to optimally updates as many reels as possible
 - Runtime: Around 20 mins, Manual Effort: 10 mins
 - Once updated, the data is pushed into a s3 bucket from where it is added to the dadatbase
+- Code: **reels_bot_part2.py**
+
+The entire architecture for the above 2 steps is based on the functionalities built in **bot_helper.py**. This has all the functions required for the flow of the process - pushing data to the database, getting instagram/aws/sql credentials, sending automated mails, and many more
 
 ## BUILT WITH / MODULES USED
 
