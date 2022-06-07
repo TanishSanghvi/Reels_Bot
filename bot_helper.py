@@ -11,7 +11,6 @@ from datetime import datetime as dt
 from datetime import timedelta as td
 from tqdm import tqdm
 from multiprocessing.dummy import Pool as ThreadPool
-import nick_etl_helper
 from random import choice
 
 
